@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0d111a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Cyber Arcade // Mini Games Hub</title>
+    <link rel="icon" type="image/png" href="/arcade-logo.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Outfit:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Top Navigation Bar -->
+      <header class="arcade-header">
+        <div class="header-left">
+          <button id="btn-back-hub" class="nav-btn hidden" aria-label="Back to Arcade Hub">
+            <span class="icon">◀</span>
+            <span class="btn-text">ARCADE</span>
+          </button>
+          <div class="brand">
+            <span class="brand-badge">PRO</span>
+            <h1 class="brand-title">CYBER<span class="neon-text">ARCADE</span></h1>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <div class="stat-pill" title="Total Games Won / Mastered">
+            <span class="stat-icon">🏆</span>
+            <span id="global-trophies">0</span>
+          </div>
+          <button id="btn-sound-toggle" class="icon-btn" aria-label="Toggle Sound">
+            <span id="sound-icon">🔊</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Arcade Hub View -->
+      <main id="hub-view" class="view-container active">
+        <!-- Hero Banner -->
+        <section class="hero-section">
+          <div class="hero-content">
+            <span class="hero-subtitle">NEXT-GEN MINI GAMES PLATFORM</span>
+            <h2 class="hero-title">Select Your Challenge</h2>
+            <p class="hero-desc">
+              9 retro & modern arcade classics optimized for mobile touch and desktop keyboard.
+            </p>
+          </div>
+          <div class="hero-stats">
+            <div class="quick-stat">
+              <span class="num">9</span>
+              <span class="label">Games</span>
+            </div>
+            <div class="quick-stat">
+              <span class="num">100%</span>
+              <span class="label">Offline</span>
+            </div>
+            <div class="quick-stat">
+              <span class="num">Touch</span>
+              <span class="label">Ready</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Category Filter Tabs -->
+        <div class="filter-bar">
+          <button class="filter-tab active" data-filter="all">All Games</button>
+          <button class="filter-tab" data-filter="puzzle">Puzzles</button>
+          <button class="filter-tab" data-filter="action">Action</button>
+          <button class="filter-tab" data-filter="trivia">Brain & Trivia</button>
+          <button class="filter-tab" data-filter="classic">Classics</button>
+        </div>
+
+        <!-- Games Grid -->
+        <section class="games-grid" id="games-grid">
+          <!-- Game cards will be injected by main.js -->
+        </section>
+      </main>
+
+      <!-- Active Game View Host -->
+      <section id="game-view" class="view-container hidden">
+        <div id="game-stage" class="game-stage">
+          <!-- Active game renders here -->
+        </div>
+      </section>
+    </div>
+
+    <!-- Script Entry Point -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

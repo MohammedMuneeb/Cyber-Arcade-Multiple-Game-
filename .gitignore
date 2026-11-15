@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large video screen recordings (>100MB exceeds GitHub push limit)
+*.mp4
+*.mov
+*.avi
+
+# Build outputs & caches
+.gradle/
+*/.gradle/
+build/
+*/build/
+.expo/
+*/.expo/
+*.local
+.env*.local
+
+# Android local configurations & signing keys
+local.properties
+*/local.properties
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

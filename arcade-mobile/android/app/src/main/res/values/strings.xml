@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Mini Arcade Multiple Games</string>
+    <string name="title_activity_main">Mini Arcade Multiple Games</string>
+    <string name="package_name">com.arcade.cyberarcade</string>
+    <string name="custom_url_scheme">com.arcade.cyberarcade</string>
+</resources>

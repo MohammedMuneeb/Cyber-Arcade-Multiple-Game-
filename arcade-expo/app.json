@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Mini Arcade Multiple Games",
+    "slug": "arcade-expo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.cyberarcade.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0a0d14",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f6669d5d-69a7-435b-bfce-57b8cd000666"
+      }
+    }
+  }
+}
